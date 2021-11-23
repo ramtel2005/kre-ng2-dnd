@@ -159,7 +159,7 @@ export abstract class AbstractComponent {
                     this._dragHelper.style.top = "0px";
                     this._dragHelper.style.left = "-1000px";
                     this._elem.parentElement.appendChild(this._dragHelper);
-                    (<any>event.dataTransfer).setDragImage(this._dragHelper, event.offsetX, event.offsetY);
+                    (<any>event.dataTransfer).setDragImage(this._dragHelper, 0, 0);
                 }
 
                 // Change drag cursor
