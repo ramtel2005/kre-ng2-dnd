@@ -1,7 +1,7 @@
 {
   "name": "kre-ng2-dnd",
   "description": "Angular 2 Drag-and-Drop without dependencies",
-  "version": "0.0.1-kre",
+  "version": "0.0.2-kre",
   "scripts": {
     "test": "karma start",
     "test-watch": "tsc --noUnusedParameters --noUnusedLocals && karma start --no-single-run --auto-watch",
