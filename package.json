@@ -1,7 +1,7 @@
 {
-  "name": "ng2-dnd",
+  "name": "kre-ng2-dnd",
   "description": "Angular 2 Drag-and-Drop without dependencies",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.1-kre",
   "scripts": {
     "test": "karma start",
     "test-watch": "tsc --noUnusedParameters --noUnusedLocals && karma start --no-single-run --auto-watch",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/akserg/ng2-dnd.git"
+    "url": "https://github.com/ramtel2005/kre-ng2-dnd"
   },
   "keywords": [
     "angular",
@@ -22,15 +22,15 @@
     "drop",
     "drag-and-drop"
   ],
-  "author": "Sergey Akopkokhyants <akserg@gmail.com>",
+  "author": "Ramkumar<ramtel2005@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/akserg/ng2-dnd/issues"
+    "url": "https://github.com/ramtel2005/kre-ng2-dnd/issues"
   },
   "main": "bundles/index.umd.js",
   "module": "index.js",
   "typings": "index.d.ts",
-  "homepage": "https://github.com/akserg/ng2-dnd#readme",
+  "homepage": "https://github.com/ramtel2005/kre-ng2-dnd#readme",
   "peerDependencies": {
     "@angular/core": "^2.4.4 || ^4.0.0"
   },

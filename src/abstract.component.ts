@@ -142,16 +142,16 @@ export abstract class AbstractComponent {
                 // Change drag image
                 if (isPresent(this.dragImage)) {
                     if (isString(this.dragImage)) {
-                        (<any>event.dataTransfer).setDragImage(createImage(<string>this.dragImage));
+                        (<any>event.dataTransfer).setDragImage(createImage(<string>this.dragImage), 0, 0);
                     } else if (isFunction(this.dragImage)) {
-                        (<any>event.dataTransfer).setDragImage(callFun(<Function>this.dragImage));
+                        (<any>event.dataTransfer).setDragImage(callFun(<Function>this.dragImage), 0, 0);
                     } else {
                         let img: DragImage = <DragImage>this.dragImage;
                         (<any>event.dataTransfer).setDragImage(img.imageElement, img.x_offset, img.y_offset);
                     }
                 } else if (isPresent(this._config.dragImage)) {
                     let dragImage: DragImage = this._config.dragImage;
-                    (<any>event.dataTransfer).setDragImage(dragImage.imageElement, dragImage.x_offset, dragImage.y_offset);
+                    (<any>event.dataTransfer).setDragImage(dragImage.imageElement, 0, 0);
                 } else if (this.cloneItem) {
                     this._dragHelper = <HTMLElement>this._elem.cloneNode(true);
                     this._dragHelper.classList.add('dnd-drag-item');
